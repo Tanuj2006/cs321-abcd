@@ -11,12 +11,6 @@
             width: 1000px;
             margin: 0 auto;
         }
-        .page-header h2{
-            margin-top: 0;
-        }
-        table tr td:last-child a{
-            margin-right: 25px;
-        }
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -43,7 +37,7 @@
                     require_once "config.php";
                     
                     // Attempt select query execution
-                    $sql = "SELECT * FROM dances where status!='proposed'";
+                    $sql = "SELECT * FROM dances";
                      // Executing and getting results
                     $mysqli_result = mysqli_query($link, $sql); 
                     // Checking results
